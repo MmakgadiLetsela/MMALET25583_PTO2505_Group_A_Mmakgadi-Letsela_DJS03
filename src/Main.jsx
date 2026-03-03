@@ -5,7 +5,7 @@
     * @principle SRP - Single Responsibility Principle: This file is solely responsible for rendering the root component of the application.
 
 */
-
+import './index.css'
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App.jsx';

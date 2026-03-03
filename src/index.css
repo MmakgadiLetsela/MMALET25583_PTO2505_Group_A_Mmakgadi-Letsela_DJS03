@@ -1,0 +1,25 @@
+/* HEADER */
+
+.app-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 20px;
+    background-color:turquoise;
+    height: 6.25rem;
+
+
+    
+}
+
+.app-title{
+    font-size: 3rem;
+    color:white;
+    
+}
+
+.podcast-icon{
+    width: .9375rem;
+    height: .9375rem;
+    
+}
