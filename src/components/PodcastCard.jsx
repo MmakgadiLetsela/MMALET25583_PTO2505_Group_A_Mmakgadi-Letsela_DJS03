@@ -25,7 +25,11 @@ export default function PodcastCard ({podcast,genres}) {
             <h3 className="podcast-title">{title}</h3>
             <p className="podcast-seasons">Seasons: {seasons}</p>
             <p className="podcast-date">Last Updated: {lastUpdated}</p>
-            <p className="podcast-genres">Genres: {genreNames.join(' . ')}</p>
+            <p className="genres-list">
+                {genreNames.map(name => (
+                    <span key={name} className="podcast-genre">{name}</span>
+                ))}
+            </p>
         </div>
     );
 }

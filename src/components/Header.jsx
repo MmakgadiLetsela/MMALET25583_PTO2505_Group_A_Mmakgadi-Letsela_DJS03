@@ -13,7 +13,7 @@ export default function Header () {
             <h1 className="app-title">
                 PodSURGE
             </h1>
-                <span className="podcast-icon" role="img" aria-label="podcast icon">🎙️</span>
+                <img className="podcast-icon" src="https://png.pngtree.com/png-vector/20230407/ourmid/pngtree-podcast-line-icon-vector-png-image_6680917.png" aria-label="podcast icon"></img>
         </header>
     )
 }

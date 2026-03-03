@@ -6,6 +6,8 @@
 
 }
 
+
+
 /* HEADER */
 
 .app-header {
@@ -13,7 +15,7 @@
     align-items: center;
     justify-content: space-evenly;
     padding: 20px;
-    background-color:turquoise;
+    background-color: turquoise;
     height: 6.25rem;
     width: 100%;
 
@@ -27,8 +29,8 @@
 }
 
 .podcast-icon{
-    width: .9375rem;
-    height: .9375rem;
+    width: 3.125rem;
+    height: 3.125rem;
 
 }
 
@@ -54,7 +56,6 @@
     align-items: center;
     padding: .9375rem;
     border-radius: 10%;
-    max-width: 15.625rem;
 }
 
 .podcast-image{
@@ -62,4 +63,19 @@
     height: 12.5rem;
     border-radius: 11%;
     
+}
+
+.podcast-genres{
+    display: flex;
+    gap: .625rem;
+    flex-wrap: wrap;
+
+}
+
+.podcast-genre{
+    background-color: white;
+    padding: .3125rem;
+    border-radius: 5%;
+    margin: .3125rem;
+
 }
