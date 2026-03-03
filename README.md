@@ -1,74 +1,36 @@
-# React + TypeScript + Vite
+#### DJS03: React Podcast Landing Page
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### Overview
 
-Currently, two official plugins are available:
+In this project, you will build the landing page for a podcast discovery app using React. Your goal is to fetch podcast data from an external API and dynamically render a responsive grid of podcast previews. This project focuses on data fetching, component structure, rendering logic, and layout styling.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Core Objectives
 
-## React Compiler
+- Fetch podcast data from an API: https://podcast-api.netlify.app/ on initial page load.
+- Display a loading indicator while data is being fetched, and handle errors or empty results with a clear user message.
+- Render a responsive grid layout of podcast previews using modular, reusable React components.
+- Pass podcast data into components via props and render each podcast card with the following:
+- Podcast image
+- Podcast title
+- Number of seasons
+- Associated genre names
+- Formatted last updated date (e.g., "2 days ago")
+- Apply clean, consistent layout and styling across different screen sizes using CSS Grid or Flexbox.
+- Maintain high-quality, readable code with clear structure and JSDoc comments for key functions and components.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Technical Requirements
+- Use React functional components
+- Use the Fetch API
+- Use useEffect() to fetch data once on mount
+- Use useState() to manage podcast data
+- Use .map() to dynamically render PodcastPreviewCard components
+- Format dates using date-fns or a custom formatter
 
-## Expanding the ESLint configuration
+### Responsive Requirements
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-# MMALET25583_PTO2505_Group_A_Mmakgadi-Letsela_DJS03
+- Must look good on:
+- Desktop (≥1200px)
+- Tablet (~768px)
+- Mobile (~375px)
+- Use CSS Grid or Flexbox
+- Media queries or frameworks like Tailwind CSS are allowed
