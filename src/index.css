@@ -107,12 +107,15 @@
     padding: .3125rem;
     border-radius: 5%;
     margin: .3125rem;
+    font-weight: bold
 
 }
 
-.podcast-genre{
-    font-weight: 550;
+.genres-list{
+    margin: 0;
 }
+
+
 
 /*RESPONSIVE DESIGN*/
 
@@ -122,3 +125,12 @@
     }
 }
 
+@media (max-width: 26.5625rem){
+    .podcast-grid{
+        grid-template-columns: 1fr;
+    }
+}
+
+.app-title{
+    font-size: 3rem;
+}
