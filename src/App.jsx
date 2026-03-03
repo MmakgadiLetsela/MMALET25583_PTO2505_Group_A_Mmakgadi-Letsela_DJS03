@@ -32,9 +32,7 @@ export default function App () {
         <main>
             {loading && (
                 <div className="message-container">
-                    <p className="loading-spinner">
-                        Loading podcasts...
-                    </p>
+                    <span className="loading-spinner"></span>
                 </div>
             )}
 
