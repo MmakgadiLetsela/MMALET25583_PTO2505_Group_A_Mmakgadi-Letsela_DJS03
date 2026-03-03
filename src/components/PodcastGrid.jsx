@@ -8,7 +8,7 @@ import PodcastCard from './PodcastCard.jsx';
  * This is the parent component that manages the layout of the podcast cards into a clean grid format.
  */
 
-export default function PodcastGrid ({podcast}) {
+export default function PodcastGrid ({podcast,genres}) {
 
 return (
     <div className="podcast-grid">
