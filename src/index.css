@@ -21,5 +21,15 @@
 .podcast-icon{
     width: .9375rem;
     height: .9375rem;
-    
+
+}
+
+/* PODCAST GRID*/
+
+
+.podcast-grid{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 1.25rem;
+
 }
