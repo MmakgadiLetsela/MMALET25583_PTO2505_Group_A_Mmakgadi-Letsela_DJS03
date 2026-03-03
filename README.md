@@ -1,10 +1,10 @@
-#### DJS03: React Podcast Landing Page
+# DJS03: React Podcast Landing Page
 
-### Overview
+## Overview
 
 In this project, you will build the landing page for a podcast discovery app using React. Your goal is to fetch podcast data from an external API and dynamically render a responsive grid of podcast previews. This project focuses on data fetching, component structure, rendering logic, and layout styling.
 
-### Core Objectives
+## Core Objectives
 
 - Fetch podcast data from an API: https://podcast-api.netlify.app/ on initial page load.
 - Display a loading indicator while data is being fetched, and handle errors or empty results with a clear user message.
@@ -18,7 +18,7 @@ In this project, you will build the landing page for a podcast discovery app usi
 - Apply clean, consistent layout and styling across different screen sizes using CSS Grid or Flexbox.
 - Maintain high-quality, readable code with clear structure and JSDoc comments for key functions and components.
 
-### Technical Requirements
+## Technical Requirements
 - Use React functional components
 - Use the Fetch API
 - Use useEffect() to fetch data once on mount
@@ -26,7 +26,7 @@ In this project, you will build the landing page for a podcast discovery app usi
 - Use .map() to dynamically render PodcastPreviewCard components
 - Format dates using date-fns or a custom formatter
 
-### Responsive Requirements
+## Responsive Requirements
 
 - Must look good on:
 - Desktop (≥1200px)
