@@ -1,3 +1,11 @@
+/*GLOBAL STYLES*/
+
+:root{
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+
+}
+
 /* HEADER */
 
 .app-header {
@@ -7,9 +15,9 @@
     padding: 20px;
     background-color:turquoise;
     height: 6.25rem;
+    width: 100%;
 
 
-    
 }
 
 .app-title{
@@ -30,6 +38,28 @@
 .podcast-grid{
     display: grid;
     grid-template-columns: repeat(4,1fr);
-    gap: 1.25rem;
+    gap: 1.875rem;
+    width: 100%;
+    padding: 1.5625rem
 
+}
+/* PODCAST CARD*/
+
+
+.podcast-card{
+    height: auto;
+    background-color: lightblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: .9375rem;
+    border-radius: 10%;
+    max-width: 15.625rem;
+}
+
+.podcast-image{
+    width: 12.5rem;
+    height: 12.5rem;
+    border-radius: 11%;
+    
 }

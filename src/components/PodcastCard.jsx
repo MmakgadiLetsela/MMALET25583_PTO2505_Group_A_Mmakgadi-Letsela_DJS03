@@ -21,11 +21,11 @@ export default function PodcastCard ({podcast,genres}) {
 
     return (
         <div className="podcast-card">
-            <img src={image} alt={title} />
-            <h3>{title}</h3>
-            <p>Seasons: {seasons}</p>
-            <p>Last Updated: {lastUpdated}</p>
-            <p>Genres: {genreNames.join(' . ')}</p>
+            <img className="podcast-image" src={image} alt={title} />
+            <h3 className="podcast-title">{title}</h3>
+            <p className="podcast-seasons">Seasons: {seasons}</p>
+            <p className="podcast-date">Last Updated: {lastUpdated}</p>
+            <p className="podcast-genres">Genres: {genreNames.join(' . ')}</p>
         </div>
     );
 }
